@@ -1,0 +1,33 @@
+<h2>Product List</h2>
+<!-- <img src="assets/images/tiger.jpg" class="img-responsive">
+<img [src]="imagePath" class="img-responsive">
+ <img src={{imagePath}} class="img-responsive"> -->
+
+ <div class="container">
+    <div class="row">
+      <div class="col-12">
+          <table class="table table-image table-hover table-danger" style="border: 2px solid green;">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Manufacturing Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of products">
+                <th scope="row">{{p.pid}}</th>
+                <td class="w-25">
+                    <img src={{p.ppic}} class="img-fluid img-thumbnail" alt="product">
+                </td>
+                <td>{{p.pname|uppercase}}</td>
+                <td>{{p.pprice|currency:'INR'}}</td>
+                <td>{{p.pmfd|date:'d/M/yyyy'}}</td>
+              </tr>
+            </tbody>
+          </table>   
+      </div>
+    </div>
+  </div>

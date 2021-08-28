@@ -1,0 +1,38 @@
+<!-- <h2>Custom Pipe Example</h2> -->
+<!-- <ul *ngFor="let n of ournumbers">
+    <li>Number: {{n}}  Square of Number: {{n|sqr}}</li>
+</ul>
+<h2>Using Built-in Pipe to show square only upto 3 Decimal Point</h2> -->
+
+<!-- <ul *ngFor="let n of ournumbers">
+    <li>Number: {{n}}  Square of Number: {{n|sqr|number:'1.1-3'}}</li>
+</ul> -->
+
+<!-- 
+
+<h2>Using Data Conversion Pipe</h2>
+<h2>MB to GB Conversion</h2>
+<ul>
+    <li>{{firstfile}} :MB Equal to {{firstfile|dcp}}</li>
+    <li>{{secondfile}} :MB Equal to {{secondfile|dcp}}</li>
+    <li>{{thirdfile}} :MB Equal to {{thirdfile|dcp}}</li>
+</ul>
+
+<h2>KB to MB Conversion</h2>
+<ul>
+    <li>{{firstfile}} :KB Equal to {{firstfile|dcp:'MB'}}</li>
+    <li>{{secondfile}} :KB Equal to {{secondfile|dcp:'MB'}}</li>
+    <li>{{thirdfile}} :KB Equal to {{thirdfile|dcp:'MB'}}</li>
+</ul>
+ -->
+
+
+ <!-- <h2>MB to GB</h2>
+ <ul *ngFor="let f of ourFiles">
+    <li>File Size: {{f}} MB OR <br> File Size:{{f|dcp}}</li>
+</ul> -->
+
+<h2>Bytes to KB</h2>
+ <ul *ngFor="let f of ourFiles">
+    <li>File Size: {{f}} Bytes OR <br> File Size:{{f|dcp:'Kilo Bytes'}}</li>
+</ul>
